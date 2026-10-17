@@ -1,0 +1,17 @@
+.selecao-page {
+  min-height: 100vh; display: flex; justify-content: center; align-items: center;
+  padding: 24px; text-align: center;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f1f5f9 45%, #dbeafe 100%);
+}
+.selecao-page .container { width: 100%; max-width: 600px; }
+.selecao-page h1 { color: #172554; font-size: 32px; margin: 0 0 12px; }
+.selecao-page h2 { color: #475569; font-size: 18px; font-weight: normal; margin: 0 0 35px; }
+.opcoes { display: flex; justify-content: center; gap: 20px; }
+.botao { background: #fff; color: #1d4ed8; border: 2px solid #cbd5e1; border-radius: 12px; padding: 30px 20px; width: 50%; font-size: 22px; font-weight: bold; transition: .2s; }
+.botao:hover { background: #1d4ed8; color: #fff; border-color: #1d4ed8; }
+.botao-sesi { color: #dc2626; }
+.botao-sesi:hover { background: #dc2626; color: #fff; border-color: #dc2626; }
+.descricao { display: block; font-size: 13px; font-weight: normal; margin-top: 10px; }
+.voltar-login { margin-top: 40px; padding: 10px 18px; background: #fff; color: #172554; border: 2px solid #cbd5e1; border-radius: 12px; font-size: 14px; font-weight: bold; }
+.voltar-login:hover { background: #e2e8f0; border-color: #94a3b8; }
+@media (max-width: 480px) { .opcoes { flex-direction: column; } .botao { width: 100%; } }
