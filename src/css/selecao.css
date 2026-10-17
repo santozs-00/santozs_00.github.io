@@ -1,0 +1,128 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo e posicionamento da página */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #e0f2fe 0%,
+        #f1f5f9 45%,
+        #dbeafe 100%
+    );
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Área principal */
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Título principal */
+h1 {
+    color: #172554;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+/* Subtítulo */
+h2 {
+    color: #475569;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+/* Organização dos botões */
+.opcoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilo padrão dos botões */
+.botao {
+    background-color: white;
+    color: #1d4ed8;
+    text-decoration: none;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.botao:hover {
+    background-color: #1d4ed8;
+    color: white;
+    border-color: #1d4ed8;
+}
+
+/* Cores exclusivas do SESI */
+.botao-sesi {
+    color: #dc2626;
+}
+
+.botao-sesi:hover {
+    background-color: #dc2626;
+    color: white;
+    border-color: #dc2626;
+}
+
+/* Texto abaixo do nome dos botões */
+.descricao {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Botão para voltar ao login */
+.voltar-login {
+    display: inline-block;
+    margin-top: 55px;
+    padding: 10px 18px;
+    background-color: white;
+    color: #172554;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+/* Efeito do botão de voltar */
+.voltar-login:hover {
+    background-color: #e2e8f0;
+    color: #172554;
+    border-color: #94a3b8;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 480px) {
+    .opcoes {
+        flex-direction: column;
+    }
+
+    .botao {
+        width: 100%;
+    }
+}
